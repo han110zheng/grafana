@@ -17,38 +17,38 @@ https://prometheus.io/download/
 
 ## 集成zabbix
 
-# Docker环境依赖安装
+## Docker环境依赖安装
 yum install -y yum-utils device-mapper-persistent-data lvm2 git vim net-tools
 
-# 安装containerd
+## 安装containerd
 yum  install -y https://download.docker.com/linux/centos/7/x86_64/stable/Packages/containerd.io-1.2.6-3.3.el7.x86_64.rpm
 
-# 安装 docker-ce-cli
+## 安装 docker-ce-cli
 yum install -y https://download.docker.com/linux/centos/7/x86_64/stable/Packages/docker-ce-cli-19.03.8-3.el7.x86_64.rpm
 
-# 安装 docker-ce
+## 安装 docker-ce
 yum install -y https://download.docker.com/linux/centos/7/x86_64/stable/Packages/docker-ce-19.03.8-3.el7.x86_64.rpm
 
-# 启动 docker
+## 启动 docker
 systemctl enable --now docker
 
-# 查看安装版本
+## 查看安装版本
 docker --version
 #Docker version 19.03.8, build afacb8b
 
-# 安装Docker Compose
+## 安装Docker Compose
 curl -L "https://github.com/docker/compose/releases/download/1.25.5/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
 
-# 如果docker-compose命令在安装后失败，请检查路径。您还可以创建到/usr/bin或路径中的任何其他目录的符号链接
+## 如果docker-compose命令在安装后失败，请检查路径。您还可以创建到/usr/bin或路径中的任何其他目录的符号链接
 ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
 
-# 查看Docker Compose版本是否安装
+## 查看Docker Compose版本是否安装
 docker-compose --version
 
-# 执行Prometheus+Grafana安装
+## 执行Prometheus+Grafana安装
 docker-compose up -d
 
-# 查看容器
+## 查看容器
 docker ps -a 或者 docker-compose ps -a
 
 ## grafana安装zabbix插件
