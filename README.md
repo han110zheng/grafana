@@ -18,6 +18,8 @@ https://prometheus.io/download/
 ## 集成zabbix
 https://github.com/alexanderzobnin/grafana-zabbix
 
+https://alexanderzobnin.github.io/grafana-zabbix/installation/
+
 ## Docker环境依赖安装
 yum install -y yum-utils device-mapper-persistent-data lvm2 git vim net-tools
 
