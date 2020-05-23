@@ -45,7 +45,7 @@ ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
 # 查看Docker Compose版本是否安装
 docker-compose --version
 
-# 执行zookeeper安装
+# 执行Prometheus+Grafana安装
 docker-compose up -d
 
 # 查看容器
