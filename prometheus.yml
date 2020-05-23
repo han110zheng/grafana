@@ -13,4 +13,12 @@ scrape_configs:
   - job_name: 'cadvisor'
     scrape_interval: 5s
     static_configs:
-      - targets: ['192.168.11.252:8080']                                    
+      - targets: ['192.168.11.252:8080']      
+  - job_name: 'mysql'
+    scrape_interval: 5s
+    static_configs:
+      - targets: ['192.168.11.98:9104']
+  - job_name: 'win-data-center'
+    scrape_interval: 5s
+    static_configs:
+      - targets: ['192.168.15.254:9182']
