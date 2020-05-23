@@ -8,6 +8,7 @@ https://prometheus.io/download/
 https://github.com/martinlindhe/wmi_exporter/releases
 
 ## cadvisor 容器监控
+https://axibase.com/products/axibase-time-series-database/writing-data/docker-cadvisor/
 
 ## Prometheus 采集数据
 https://prometheus.io/download/
@@ -43,6 +44,13 @@ ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
 
 # 查看Docker Compose版本是否安装
 docker-compose --version
+
+# 执行zookeeper安装
+docker-compose up -d
+
+# 查看容器
+docker ps -a
+docker-compose ps -a
 
 ## grafana安装zabbix插件
 docker exec -it grafana grafana-cli plugins install alexanderzobnin-zabbix-app
