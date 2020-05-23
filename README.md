@@ -16,6 +16,7 @@ https://prometheus.io/download/
 ## mysql，windwos 监控
 
 ## 集成zabbix
+https://github.com/alexanderzobnin/grafana-zabbix
 
 ## Docker环境依赖安装
 yum install -y yum-utils device-mapper-persistent-data lvm2 git vim net-tools
