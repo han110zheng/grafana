@@ -15,3 +15,9 @@
 ## mysql，windwos 监控
 
 ## 集成zabbix
+
+## grafana安装zabbix插件
+docker exec -it grafana grafana-cli plugins install alexanderzobnin-zabbix-app
+
+## 重启grafana
+docker restart grafana
