@@ -45,6 +45,9 @@ ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
 ## 查看Docker Compose版本是否安装
 docker-compose --version
 
+## 创建网络
+docker network create --driver=bridge --subnet=172.22.0.0/16 grafana
+
 ## 执行Prometheus+Grafana安装
 docker-compose up -d
 
