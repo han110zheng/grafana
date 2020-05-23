@@ -1,4 +1,3 @@
-
 ## alertmanager  告警模块
 https://prometheus.io/download/
 
@@ -17,13 +16,7 @@ https://prometheus.io/download/
 
 ## 集成zabbix
 
-# Docker
-是一个开源的应用容器引擎，让开发者可以打包他们的应用以及依赖包到一个可移植的镜像中，然后发布到任何流行的 Linux或Windows 机器上，也可以实现虚拟化。容器是完全使用沙箱机制，相互之间不会有任何接口。
-
-# Docker Compose
-Docker撰写依赖于Docker引擎来完成任何有意义的工作，因此请确保在本地或远程安装了Docker引擎，具体取决于您的设置。
-
-# 环境依赖安装
+# Docker环境依赖安装
 yum install -y yum-utils device-mapper-persistent-data lvm2 git vim net-tools
 
 # 安装containerd
