@@ -49,8 +49,7 @@ docker-compose --version
 docker-compose up -d
 
 # 查看容器
-docker ps -a
-docker-compose ps -a
+docker ps -a 或者 docker-compose ps -a
 
 ## grafana安装zabbix插件
 docker exec -it grafana grafana-cli plugins install alexanderzobnin-zabbix-app
